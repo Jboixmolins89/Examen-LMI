@@ -1,0 +1,31 @@
+/* Autor: Jose Antonio Boix */
+/* Fecha: 20 de noviembre de 2019 */
+
+footer {
+background-color: yellow;
+}
+
+header {
+    background-color:yellow;
+}
+
+nav {
+    background-color: lightslategrey;
+    color: yellow;
+}
+
+h3 {
+    color: mediumpurple;
+}
+
+main.azul {
+    background-color: mediumturquoise;
+}
+
+p.centrado {
+    text-align: center;
+}
+
+img.derecha {
+        float: right;
+}

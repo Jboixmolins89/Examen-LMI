@@ -27,14 +27,14 @@
                                 <tbody>
                                   <tr>
                                     <td>Tratamiento: *</td>
-                                    <td>Nombre:</td>
+                                    <td>Nombre: *</td>
                                     <td>Apellido: *</td>
                                     <td>Apellido 2:</td>
                                   </tr>
                                   <tr>
-                                    <td><input type="radio" name="boton"> Sr. <input type="radio" name="boton"> Sra.</td>
-                                    <td><input type="text" name="Nombre"></td>
-                                    <td><input type="text" name="Apellido"></td>
+                                    <td><input type="radio" name="boton" required> Sr. <input type="radio" name="boton"> Sra.</td>
+                                    <td><input type="text" name="Nombre" required></td>
+                                    <td><input type="text" name="Apellido" required></td>
                                     <td><input type="text" name="Apellido 2"></td>
                                   </tr>
                                   <tr>
@@ -44,14 +44,14 @@
                                     <td> </td>
                                   </tr>
                                   <tr>
-                                    <td><select name="tipo doc">
+                                    <td><select name="tipo doc" required>
                                       <option value="1">D.N.I.</option>
                                       <option value="2">NIF</option>
                                       <option value="3">NIE</option>
                                     </select>
                                     </td>
-                                    <td><input type="text" name="nºdoc"></td>
-                                    <td><input type="date" name="fechanacimiento"></td>
+                                    <td><input type="text" name="nºdoc" required></td>
+                                    <td><input type="date" name="fechanacimiento" required></td>
                                     <td></td>
                                   </tr>
                                   <tr>
@@ -62,13 +62,13 @@
                                   </tr>
                                   <tr>
                                     <td>
-                                      <select name="paisnacimiento">
+                                      <select name="paisnacimiento" required>
                                         <option value="1">ESPAÑA</option>
                                         <option value="2">SIRIA</option>
                                         <option value="3">NEVERLAND</option>
                                     </td>
                                     <td>
-                                      <select name="nacionalidad">
+                                      <select name="nacionalidad" required>
                                         <option value="1">ESPAÑA</option>
                                         <option value="2">SIRIA</option>
                                         <option value="3">NEVERLANDESA</option>
@@ -80,7 +80,7 @@
                                         <option value="3">PEKIN</option>
                                     </td>
                                     <td>
-                                      <select name="PAISRESIDENCIAFISCAL">
+                                      <select name="PAISRESIDENCIAFISCAL" required>
                                         <option value="1">ESPAÑA</option>
                                         <option value="2">COREA LA BUENA</option>
                                         <option value="3">COREA LA MEJOR</option>
@@ -93,17 +93,76 @@
                                     <td>Empresa: *</td>
                                   </tr>
                                   <tr>
+                                    <td>
+                                      <select name="currele" required>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                    </td>
+                                    <td>
+                                      <select name="tipoactividad" required>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                    </td>
+                                    <td>
+                                      <select name="sector profesional" required>
+                                        <option value="1"></option>
+                                        <option value="2"></option>
+                                        <option value="3"></option>
+                                    </td>
+                                    <td><input type="text" name="empresa" required></td>
+                                  </tr>
+                                  <tr>
+                                    <td>Propósito de la cuenta: *</td>
+                                    <td>Origen de sus ahorrros: *</td>
                                     <td></td>
                                     <td></td>
-                                    <td></td>
-                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <select name="propósitocuenta" required>
+                                      <option value="1">Ahorro</option>
+                                      <option value="2">trapis</option>
+                                      <option value="3">algo</option>
+                                    </td>
+                                    <td>
+                                      <select name="origenahorros" required>
+                                      <option value="1">Nómina o pensión</option>
+                                      <option value="2">SIRIA</option>
+                                      <option value="3">NEVERLAND</option>
+                                    </td>
                                   </tr>
                                 </tbody>
                         </table>
                 </fieldset>
+          </section>
 
-            
-        </section>
+          <section>
+            <fieldset>
+              <table>
+                <tbody>
+                  <tr>
+                    <td colspan="2">Tipo de via*</td>
+                    <td colspan="4">Dirección*</td>
+                    <td>Número*</td>
+                    <td>Piso</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                        <select name="tipovia" required>
+                        <option value="1">CALLE</option>
+                        <option value="2">Carretera</option>
+                        <option value="3">Avn.</option>
+                    </td>
+                    <td colspan="4"><input type="text" name="empresa" required></td>
+                    <td><input type="text" name="empresa" required></td>
+                    <td><input type="text" name="empresa" required></td>
+                  </tr>
+                </tbody>
+              </table>
+            </fieldset>
+          </section>
 
     </main>
 
